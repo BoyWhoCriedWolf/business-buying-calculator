@@ -1,7 +1,7 @@
-import { Box, Container, Paper } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import React from "react";
-import Header from "./header";
 import Footer from "./footer";
+import Header from "./header";
 import { LAYOUT_UNIT } from "./header/Header";
 
 const Layout = ({ children }) => {
