@@ -45,7 +45,7 @@ const CalculatorOutputs = ({ data = DEFAULT_INPUT_FORM }) => {
 
   return (
     <Grid container>
-      <Grid item lg={6} md={12} sm={12} xs={12}>
+      <Grid item lg={5} md={12} sm={12} xs={12}>
         <PieChart
           colors={[
             COLOR_PRIMARY_TRANSPARENT_WHITE_40,
@@ -69,7 +69,7 @@ const CalculatorOutputs = ({ data = DEFAULT_INPUT_FORM }) => {
           height={240}
         />
       </Grid>
-      <Grid item lg={6} md={12} sm={12} xs={12}>
+      <Grid item lg={7} md={12} sm={12} xs={12}>
         <PieChart
           colors={[
             COLOR_PRIMARY_TRANSPARENT_WHITE_40,
@@ -82,7 +82,7 @@ const CalculatorOutputs = ({ data = DEFAULT_INPUT_FORM }) => {
                 {
                   id: 0,
                   value: adjustedMonthlyProfit,
-                  label: "Profit after loan Payments",
+                  label: "Profit after \n loan Payments",
                 },
                 { id: 1, value: monthlyLoanPayment, label: "Loan Payment" },
               ],
