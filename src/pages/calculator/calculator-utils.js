@@ -1,4 +1,5 @@
 export function calculateLoanPayment(loanAmount, interestRate, loanTerm) {
+  console.log(loanAmount, interestRate, loanTerm);
   var monthlyInterestRate = interestRate / 12;
   return (
     (loanAmount * monthlyInterestRate) /

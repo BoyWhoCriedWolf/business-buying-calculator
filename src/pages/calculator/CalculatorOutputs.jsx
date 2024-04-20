@@ -22,9 +22,9 @@ const CalculatorOutputs = ({ data = DEFAULT_INPUT_FORM }) => {
   const monthlyLoanPayment = calculateLoanPayment(
     data?.total_loans_amount,
     data?.loans_interest_rate / 100,
-    data?.loans_term_length
+    data?.loans_term_length * 12
   );
-  const totalPayments = monthlyLoanPayment * data?.loans_term_length;
+  const totalPayments = monthlyLoanPayment * (data?.loans_term_length * 12);
   var totalInterestPaid = totalPayments - data?.total_loans_amount;
   var adjustedMonthlyProfit = monthlyOperationIncome - monthlyLoanPayment;
   var adjustedAnnualProfit = adjustedMonthlyProfit * 12;

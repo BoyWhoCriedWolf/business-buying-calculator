@@ -8,7 +8,14 @@ import { APP_NAME } from "../../constants/strings";
 
 export const LAYOUT_BORDER = `solid 3px ${COLOR_PRIMARY_TRANSPARENT_WHITE_20}`;
 
-export const LAYOUT_UNIT = 60;
+export const LAYOUT_UNIT =
+  window.innerWidth > 1200
+    ? 60
+    : window.innerWidth > 900
+    ? 40
+    : window.innerWidth > 600
+    ? 30
+    : 20;
 
 const Header = () => {
   return (
