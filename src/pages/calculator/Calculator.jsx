@@ -19,7 +19,7 @@ const Calculator = () => {
   return (
     <Grid container spacing={2}>
       <Grid item lg={4} md={6} sm={12} xs={12}>
-        <BorderContainer title="Inputs">
+        <BorderContainer title="Inputs" collapseDownSm>
           <CalculatorInputs data={formData} onChange={setFormData} />
         </BorderContainer>
       </Grid>
