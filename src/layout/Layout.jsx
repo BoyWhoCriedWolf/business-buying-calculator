@@ -11,7 +11,13 @@ const Layout = ({ children }) => {
       sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
     >
       <Header />
-      <Box sx={{ flexGrow: 1, px: (LAYOUT_UNIT * 2) / 8 }}>
+      <Box
+        sx={{
+          flexGrow: 1,
+          px: (LAYOUT_UNIT * 2) / 8,
+          pb: (LAYOUT_UNIT * 2) / 8,
+        }}
+      >
         <Box sx={{ p: 2 }}>{children}</Box>
       </Box>
       <Footer />

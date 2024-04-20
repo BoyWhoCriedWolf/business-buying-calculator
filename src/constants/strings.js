@@ -1,1 +1,1 @@
-export const APP_NAME = "Business buying calculator";
+export const APP_NAME = "Live Financial Projection Tool for Business Buyers";

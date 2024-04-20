@@ -1,15 +1,9 @@
 import { Box, Slider, Typography } from "@mui/material";
 import React from "react";
+import { DEFAULT_INPUT_FORM } from "./Calculator";
 
 const CalculatorInputs = ({
-  data = {
-    income: 5000,
-    monthly_expenses: 7000,
-    investment_amount: 2000,
-    total_loans_amount: 150000,
-    loans_interest_rate: 7.5,
-    loans_term_length: 5,
-  },
+  data = DEFAULT_INPUT_FORM,
   onChange = () => {},
 }) => {
   const handleChange = (e) => {
@@ -64,7 +58,7 @@ const CalculatorInputs = ({
           onChange={handleChange}
           step={1000}
           min={0}
-          max={50000}
+          max={100000}
           getAriaValueText={(value, index) => `$${value}`}
           color="primary"
         />
