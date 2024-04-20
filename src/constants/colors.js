@@ -1,1 +1,4 @@
-export const PRIMARY_BLUE = "#1B9CFC"
+export const COLOR_PRIMARY_BLUE = "#1B9CFC"
+export const COLOR_PRIMARY_TRANSPARENT_WHITE_10 = '#fff2'
+export const COLOR_PRIMARY_TRANSPARENT_WHITE_20 = '#fff3'
+export const COLOR_PRIMARY_TRANSPARENT_WHITE_40 = '#fff6'

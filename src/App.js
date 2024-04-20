@@ -1,11 +1,12 @@
-import { Paper, ThemeProvider } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import "./App.css";
+import Layout from "./layout";
 import { DARK_THEME } from "./thems/darkTheme";
 
 function App() {
   return (
     <ThemeProvider theme={DARK_THEME}>
-      <Paper>asfsf</Paper>
+      <Layout>content</Layout>
     </ThemeProvider>
   );
 }
