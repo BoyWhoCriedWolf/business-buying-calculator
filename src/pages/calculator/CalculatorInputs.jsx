@@ -73,7 +73,7 @@ const CalculatorInputs = ({
       {/* Total Amount of Loans ($) */}
       <Box sx={{ my: 1 }}>
         <Typography gutterBottom>
-          Total Amount of Loans ($):: <b>${data?.total_loans_amount ?? 0}</b>
+          Total Amount of Loans ($): <b>${data?.total_loans_amount ?? 0}</b>
         </Typography>
         <Slider
           name="total_loans_amount"

@@ -14,11 +14,14 @@ const Calculator = () => {
   });
 
   return (
-    <Grid container>
-      <Grid item lg={6} md={6} sm={6} xs={6}>
+    <Grid container spacing={2}>
+      <Grid item lg={4} md={4} sm={6} xs={12}>
         <BorderContainer title="Inputs">
           <CalculatorInputs data={formData} onChange={setFormData} />
         </BorderContainer>
+      </Grid>
+      <Grid item lg={8} md={8} sm={6} xs={12}>
+        <BorderContainer title="Outputs"></BorderContainer>
       </Grid>
     </Grid>
   );
