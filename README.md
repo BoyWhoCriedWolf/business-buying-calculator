@@ -1,3 +1,7 @@
+https://www.figma.com/community/file/1151859602516254686
+
+https://www.figma.com/file/NM2JJzjS90t89G4CTfKqOi/Presentation-Template-with-components-and-icons-(Community)?type=design&node-id=1-7745&mode=design&t=YStKQ1ZL1aOS0SV0-0
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
