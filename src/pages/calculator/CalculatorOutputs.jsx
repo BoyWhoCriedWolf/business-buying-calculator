@@ -1,12 +1,3 @@
-import { PieChart } from "@mui/x-charts";
-import React from "react";
-import { DEFAULT_INPUT_FORM } from "./Calculator";
-import { calculateLoanPayment, formatNumber } from "./calculator-utils";
-import {
-  COLOR_PRIMARY_TRANSPARENT_WHITE_20,
-  COLOR_PRIMARY_TRANSPARENT_WHITE_30,
-  COLOR_PRIMARY_TRANSPARENT_WHITE_40,
-} from "../../constants/colors";
 import {
   Grid,
   Table,
@@ -15,6 +6,15 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
+import { PieChart } from "@mui/x-charts";
+import React from "react";
+import {
+  COLOR_PRIMARY_TRANSPARENT_WHITE_20,
+  COLOR_PRIMARY_TRANSPARENT_WHITE_30,
+  COLOR_PRIMARY_TRANSPARENT_WHITE_60,
+} from "../../constants/colors";
+import { DEFAULT_INPUT_FORM } from "./Calculator";
+import { calculateLoanPayment, formatNumber } from "./calculator-utils";
 
 const CalculatorOutputs = ({ data = DEFAULT_INPUT_FORM }) => {
   const monthlyOperationIncome = data?.income - data?.monthly_expenses;
@@ -48,7 +48,7 @@ const CalculatorOutputs = ({ data = DEFAULT_INPUT_FORM }) => {
       <Grid item lg={5} md={12} sm={12} xs={12}>
         <PieChart
           colors={[
-            COLOR_PRIMARY_TRANSPARENT_WHITE_40,
+            COLOR_PRIMARY_TRANSPARENT_WHITE_60,
             COLOR_PRIMARY_TRANSPARENT_WHITE_30,
             COLOR_PRIMARY_TRANSPARENT_WHITE_20,
           ]}
@@ -72,7 +72,7 @@ const CalculatorOutputs = ({ data = DEFAULT_INPUT_FORM }) => {
       <Grid item lg={7} md={12} sm={12} xs={12}>
         <PieChart
           colors={[
-            COLOR_PRIMARY_TRANSPARENT_WHITE_40,
+            COLOR_PRIMARY_TRANSPARENT_WHITE_60,
             COLOR_PRIMARY_TRANSPARENT_WHITE_30,
             COLOR_PRIMARY_TRANSPARENT_WHITE_20,
           ]}
