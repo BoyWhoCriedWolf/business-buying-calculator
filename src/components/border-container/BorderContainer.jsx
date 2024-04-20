@@ -1,13 +1,23 @@
 import { Box, Collapse, IconButton, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LAYOUT_BORDER } from "../../layout/header/Header";
 import { COLOR_PRIMARY_TRANSPARENT_WHITE_10 } from "../../constants/colors";
 import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
 
-const BorderContainer = ({ title = "", children }) => {
+const BorderContainer = ({ title = "", collapseDownSm = false, children }) => {
   const [isOpen, setIsOpen] = useState(true);
 
+  const innerWidth = window.innerWidth;
+
   const handleToggle = () => setIsOpen((s = false) => !s);
+
+  useEffect(() => {
+    if (collapseDownSm) {
+      if (innerWidth < 600) {
+        setIsOpen(false);
+      }
+    }
+  }, [collapseDownSm, innerWidth]);
 
   return (
     <Box sx={{ border: LAYOUT_BORDER }}>
